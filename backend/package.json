@@ -1,0 +1,14 @@
+{
+  "name": "blockchain-file-sharing-backend",
+  "version": "1.0.0",
+  "description": "Backend for Blockchain-Based Secure File Sharing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "web3": "^1.7.0",
+    "ipfs-http-client": "^54.0.0"
+  }
+}

@@ -1,0 +1,126 @@
+[
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "fileHash",
+                "type": "string"
+            }
+        ],
+        "name": "uploadFile",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "fileHash",
+                "type": "string"
+            },
+            {
+                "name": "grantee",
+                "type": "address"
+            }
+        ],
+        "name": "grantPermission",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "fileHash",
+                "type": "string"
+            },
+            {
+                "name": "revokee",
+                "type": "address"
+            }
+        ],
+        "name": "revokePermission",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "fileHash",
+                "type": "string"
+            },
+            {
+                "name": "user",
+                "type": "address"
+            }
+        ],
+        "name": "checkPermission",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "fileHash",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "name": "owner",
+                "type": "address"
+            }
+        ],
+        "name": "FileUploaded",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "fileHash",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "name": "grantee",
+                "type": "address"
+            }
+        ],
+        "name": "PermissionGranted",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "fileHash",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "name": "revokee",
+                "type": "address"
+            }
+        ],
+        "name": "PermissionRevoked",
+        "type": "event"
+    }
+]
